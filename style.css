@@ -1,0 +1,238 @@
+header {
+background-color: black;
+}
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid pink;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_top{
+    display: flex;
+ justify-content: space-between;
+ min-width: 136px;
+ align-items: center;   
+}
+nav ul {
+    display: flex;
+}
+nav ul a{
+    color: blanchedalmond;
+    padding: 18px 32px;
+    border-radius: 10px;
+    transition: all 2s;
+}
+nav ul li{
+    margin-right: 48px; 
+}
+nav ul li:last-child{
+    margin-right: 0;
+}
+nav ul a:hover{
+    color:aqua;
+    background-color: blueviolet;
+}
+.header_info{
+background-image: url(./herois-header.png);
+min-height: 100vh;
+background-position: bottom right;
+background-repeat: no-repeat;
+background-size: contain;
+}
+.header_info h1{
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 90%;
+color: #FFFFFF;
+max-width: 878px;
+padding-top: 148px;
+}
+.header_info p{
+    max-width: 618px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+max-width: 878px;
+padding-top: 16px;
+}
+.header_info button{
+    padding: 18px 32px;
+    background: #5092D2;
+    border-radius: 5px;
+    transition: all 2s;
+}
+.header_info button:hover{
+    background: none;
+color: pink;
+border:2px solid pink;
+}
+
+.heroes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0 10px;
+}
+body {
+    background-color: black;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    transform: translateY(-50px);
+}
+.item {
+    background-color: #27272E;
+    margin-top: 50px;
+}
+.Gods h2 {
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+color: #FFFFFF;
+text-align: center;
+padding-top: 71px;
+padding-bottom: 79px;
+}
+.item h3{
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+color: #FFFFFF;
+text-align: center;
+}
+.square{
+    background-image: url(./principal.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.square h2{
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+color: #FFFFFF;
+max-width: 381px;
+margin-left: auto;
+padding-bottom: 16px;
+padding-top: 210px;
+}
+.square p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #FFFFFF;
+max-width: 381px;
+margin-left: auto;
+padding-bottom: 16px;
+}
+.bow{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0 16px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    background: #27272E;
+    border-radius: 5px;
+    padding-left: 64px;
+}
+.text img {
+    max-width: 279px;
+}
+.axe h2 {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+    padding-top: 260px;
+    padding-bottom: 26px; 
+}
+.text h3{
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+color: #FFFFFF;
+padding-top: 150px;
+padding-bottom: 16px;
+}
+.text p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: #FFFFFF;
+padding-bottom:40px ;
+}
+.text button{
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+color: #16161A;
+background: #5092D2;
+border-radius: 5px;
+padding: 18.5px 32px;
+}
+@media screen and (max-width:940px) {
+    nav ul a {
+        padding: 8px 22px;  
+}
+.text h3 {
+    font-size: 12px;
+    line-height: 17px;
+}}
+@media screen and (max-width:860px) {
+    nav ul a {
+        padding: 4px 11px;  
+}
+.bow {
+    grid-template-columns: repeat(1,1fr);
+    padding: 10px;
+    grid-gap: 16px 0px;}
+}
+@media screen and (max-width:770px) {
+    nav ul a {
+        padding: 2px 5px; 
+        font-size: 12px; 
+}}
+@media screen and (max-width:630px) {
+    nav ul a {
+        padding: 1px 2px;
+        font-size: 8px;  
+}}
+@media screen and (max-width:540px) {
+    nav ul a {
+        font-size: 12px;  
+}
+.header_top {
+    flex-direction: column;
+    align-items: center;
+}
+nav ul{
+    flex-direction: column;
+}
+}
